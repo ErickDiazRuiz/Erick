@@ -1,0 +1,98 @@
+ <div class="d-flex flex-column bg-dark" style="height: 100dvh;">
+
+  <nav class="navbar navbar-expand-lg  bg-dark  sticky-top align-items-start">
+    <div class="container-fluid d-flex justify-content-sm-between mx-3">
+      <button class="navbar-toggler border-0 bg-transparent text-white ps-0 pe-4 " type="button" (click)="closeMenu()">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+  
+      <a class="navbar-brand text-white m-0" href="#">
+        <i class="bi bi-lightning-fill"></i>
+      </a>
+  
+      <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link active text-white "  routerLink="/overview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/history">History</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white">Energy</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex " role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+      
+      <button class="btn btn-sm btn-secondary btn-outline-white bg-transparent text-white" >Login</button>
+    
+    </div>
+  </nav>
+  
+  <div class="collapse navbar d-lg-none  rounded-4 bg-light p-4 flex-grow-1 bg-white  " id="MenuList">
+    <div class="flex-grow-1 h-100 mx-2 py-2 d-flex flex-column">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 fs-5 fw-medium ">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" routerLink="/overview" (click)="closeMenu()">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-dark" routerLink="/history" (click)="closeMenu()">History</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu bg-transparent border-0 ">
+            <li><a class="dropdown-item m-0 p-0" href="#">Action</a></li>
+            <li><a class="dropdown-item m-0 p-0" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item m-0 p-0" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-dark">Energy</a>
+        </li>
+      </ul>
+
+      <input class="form-control form-control-sm  mt-auto py-2" type="search" placeholder="Search" aria-label="Search">
+
+    </div>
+
+
+  </div>
+
+    
+  <div id="Contentido" class="collapse show  d-lg-flex align-items-stretch text-white flex-grow-1"
+    style="background-color: #0d1117;">
+  
+    <!-- Page Content -->
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+
+ </div> 
+  

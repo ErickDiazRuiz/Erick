@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.min.css";
+
+* {
+    transition: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Elimina el contorno que aparece al hacer clic */
+    box-shadow: none; /* Elimina cualquier sombra que se aplique al botón */
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
